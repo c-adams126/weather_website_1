@@ -50,8 +50,12 @@ window.addEventListener('load', ()=> {
       document.getElementById('icon').src = "./weather/amcharts_weather_icons_1.0.0/animated/rainy-5.svg";
     }else if(num >= 600 && num < 623){
       document.getElementById('icon').src = "./weather/amcharts_weather_icons_1.0.0/animated/snowy-4.svg";
-    }else {
+    }else if(num >=701 && num < 782) {
+      document.getElementById('icon').src = "https://loading.io/icon/bd8a5b";
+    }else if(num == 800){
       document.getElementById('icon').src = "./weather/amcharts_weather_icons_1.0.0/animated/day.svg";
+    }else {
+      document.getElementById('icon').src = "./weather/amcharts_weather_icons_1.0.0/animated/cloudy.svg";
     }
   }
 });
